@@ -16,6 +16,9 @@ struct ContentView: View {     // creating view screen
             Button("Hello"){  // creating a button that says "Hello"
                 helloWorld = true   // this will trigger if button is pressed
             }
+            .padding()
+            .background(.green)
+        
             .alert("Hello World", isPresented: $helloWorld){    /*alert will pop up
                                                                  when helloWorld is true...
                                                                  $ allows the variable to
